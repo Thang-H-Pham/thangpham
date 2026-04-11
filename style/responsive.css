@@ -300,6 +300,8 @@
         height: auto;
         min-height: unset;
         align-items: center;
+        overflow: visible;
+
     }
     .hero-left {
         margin-left: 8px;

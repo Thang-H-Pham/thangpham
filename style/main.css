@@ -11,6 +11,7 @@ body {
     height: calc(100vh - 100px);
     padding: 0px 80px 0 60px ;
     gap: 40px;
+    overflow: hidden;
 }
 
 .hero-section img {
@@ -35,11 +36,12 @@ body {
         20px 20px 0px #f5a623,
         40px 40px 0px rgba(0,0,0,0.3);
     animation: float 3s ease-in-out infinite;
+    margin: 20px 40px 40px 0;
 }
 
 @keyframes float {
     0%   { transform: translate(0px, 0px); }
-    50%  { transform: translate(-15px, 15px); }
+    50%  { transform: translate(-10px, 10px); }
     100% { transform: translate(0px, 0px); }
 }
 
@@ -47,6 +49,7 @@ body {
 .hero-right {
     display: flex;
     justify-content:space-around;
+    overflow: hidden;
 }
 
 .hero-left {
