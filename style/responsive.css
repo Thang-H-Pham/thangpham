@@ -547,6 +547,15 @@
     .contact-item { justify-content: center; }
     .contact-left h3 { font-size: 20px; }
     .contact-left p { font-size: 14px; }
+
+        /* Scrolling bar */
+    .about-me, .skills, .projects {
+        scroll-margin: 100px;
+    }
+
+    .experiences, .contact {
+        scroll-margin-top: 90px;
+    }
 }
 
 
@@ -659,6 +668,15 @@
     .form-group input,
     .form-group textarea { font-size: 13px; }
     .btn-send { font-size: 15px; }
+
+    /* Scrolling bar */
+    .about-me, .skills, .projects {
+        scroll-margin: 100px;
+    }
+
+    .experiences, .contact {
+        scroll-margin-top: 90px;
+    }
 
     /* FOOTER */
     footer {
