@@ -1,0 +1,179 @@
+/* ========================== EXPERIENCES ========================== */
+.experiences {
+    padding: 80px;
+    margin-top: 100px;
+}
+
+.exp-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.exp-header h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: #ffffff;
+}
+
+/* ========================== TIMELINE ========================== */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Vertical center line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    background: rgba(245,166,35,0.3);
+}
+
+.tl-item {
+    display: grid;
+    grid-template-columns: 1fr 40px 1fr;
+    gap: 20px;
+    margin-bottom: 50px;
+    align-items: start;
+    width: 90%;
+}
+
+.tl-center {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.tl-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #f5a623;
+    border: 3px solid #033552;
+    box-shadow: 0 0 0 3px #f5a623;
+}
+
+/* Left items — content on left, empty on right */
+.tl-item.left .tl-content {
+    text-align: right;
+}
+
+.tl-item.left .tl-list {
+    text-align: left;
+    padding-left: 16px;
+}
+
+.tl-item.left .tl-tags {
+    justify-content: flex-end;
+}
+
+/* Right items — empty on left, content on right */
+.tl-item.right .tl-content {
+    text-align: left;
+}
+
+/* Content styles */
+.tl-content {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 20px 24px;
+    transition: background 0.2s ease;
+}
+
+.tl-content:hover {
+    background: rgba(255,255,255,0.08);
+}
+
+.tl-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+}
+
+.tl-item.left .tl-top {
+    flex-direction: row-reverse;
+}
+
+.tl-content h3 {
+    font-size: 27px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.tl-badge {
+    font-size: 15px;
+    background: rgba(245,166,35,0.15);
+    color: #f5a623;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(245,166,35,0.3);
+    white-space: nowrap;
+}
+
+.tl-company {
+    font-size: 20px;
+    color: #f5a623;
+    font-weight: 600;
+    margin: 4px 0 2px;
+}
+
+.tl-location {
+    font-size: 17px;
+    color: #cce0f0;
+    margin: 0 0 10px;
+}
+
+.tl-company i,
+.tl-location i {
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.tl-desc {
+    font-size: 18px;
+    color: #cce0f0;
+    line-height: 1.6;
+    margin: 0 0 10px;
+}
+
+.tl-list {
+    font-size: 17px;
+    color: rgba(204,224,240,0.8);
+    line-height: 1.7;
+    margin: 0 0 14px;
+}
+
+.tl-list li {
+    margin-bottom: 4px;
+}
+
+.tl-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tl-tags span {
+    font-size: 14px;
+    background: rgba(255,255,255,0.08);
+    color: #cce0f0;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+

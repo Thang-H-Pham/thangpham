@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/b588c504a9.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts: Lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS — general must come last to override others -->
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/projects.css">
+    <link rel="stylesheet" href="/style/experiences.css">
+    <link rel="stylesheet" href="/style/contact.css">
+    <link rel="stylesheet" href="/style/general.css">
+    <link rel="stylesheet" href="/style/responsive.css">
+
+    <title>Thang Pham</title>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <section class="navbar">
+        <div class="left">
+            <a href="/index.html"><h1>Thang Pham</h1></a>
+        </div>
+        <div class="right">
+            <p><a href="#home">HOME</a></p>
+            <p><a href="#about">ABOUT</a></p>
+            <p><a href="#skills">SKILLS</a></p>
+            <p><a href="#experiences">EXPERIENCES</a></p>
+            <p><a href="#projects">PROJECTS</a></p>
+            <p><a href="#contact">CONTACT</a></p>
+        </div>
+    </section>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+        <div class="hero-left">
+            <h3>Hi, I'm Thang Pham</h3>
+            <h2>Computer Science <br>Freshman</h2>
+            <p>
+                at Wentworth Institute of Technology with a
+                foundation in web development, building strong
+                Java skills, exploring <span class="highlight">Data Structures &
+                Algorithms</span>, and pursuing a passion for
+                <span class="highlight">Artificial Intelligence.</span>
+            </p>
+            <div class="button">
+                <button class="hero-btn" id="myButton">
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <p>ABOUT ME</p>
+                </button>
+                <button class="hero-btn" id="myButton1">
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <p>TECHNICAL SKILLS</p>
+                </button>
+            </div>
+        </div>
+        <div class="hero-right">
+            <img src="/img/Hero_Pic.jpg" alt="hero section image">
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="about-me" id="about">
+        <div class="about-header">
+            <h2>About <span class="gold">Me</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="left">
+                <img src="/img/About_Me.jpg" alt="my personal image">
+            </div>
+            <div class="right">
+                <p class="name">Full name: Thang Huu Pham <br>
+                    (in Vietnamese: Phạm Hữu Thắng)</p>
+                <p class="role">Computer Science Student – From Vietnam</p>
+                <p>
+                I’m interested in <span class="highlight">software development</span>, with a growing focus on <span class="highlight">cloud</span> and <span class="highlight">DevOps</span>. I primarily work with <span class="highlight">Java</span>, along with HTML, CSS, and JavaScript, and continue expanding my technical skills.    
+                </p>
+                <p>
+                    I enjoy building at the intersection of math and code, especially through <span class="highlight">problem-solving</span> and logical thinking. I approach challenges step by step, focusing on creating reliable and <span class="highlight">efficient solutions</span>.                
+                </p>
+                <p>
+                    My goal is to grow as a software developer, particularly in <span class="highlight">cloud technologies</span> and <span class="highlight">scalable systems</span>.               
+                </p>
+                <p>
+                    Outside of academics, I enjoy playing guitar, soccer, and tennis.
+                </p>
+                <div class="about-buttons">
+                    <a href="https://drive.google.com/file/d/1rkODCZs0_YcqFi-9hQsJo9bsHHvFvK__/view?usp=sharing" target="_blank" class="btn-gold">
+                        View My Resume <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/thanghpham/" target="_blank" class="btn-gold">
+                        View My LinkedIn <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS -->
+    <section class="skills" id="skills">
+        <div class="skills-header">
+            <h2>My <span class="gold">Technical Skills</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="skills-grid">
+
+            <!-- Programming Languages -->
+            <div class="skill-box">
+                <h3>Programming <span class="gold">Languages</span></h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fa-brands fa-java"></i>
+                        <p>Java</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="/img/skills/typescript.png" alt="TypeScript">
+                        <p>TypeScript</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="/img/skills/c.png" alt="C">
+                        <p>C</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="/img/skills/assembly.png" alt="Assembly">
+                    <p>Assembly <br> RISC-V </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web & Frameworks -->
+            <div class="skill-box">
+                <h3>Web & <span class="gold">Frameworks</span></h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fa-brands fa-html5"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="/img/skills/tailwind.png" alt="Tailwind">
+                        <p>Tailwind</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="/img/skills/svelte.png" alt="Svelte">
+                        <p>Svelte</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="/img/skills/vite.png" alt="Vite">
+                        <p>Vite</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Skills & Tools -->
+            <div class="skill-box">
+                <h3>Core Skills & <span class="gold">Tools</span></h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <img src="/img/skills/dsa.png" alt="Data Structures">
+                        <p>Data Structures & Algorithms</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-github"></i>
+                        <p>GitHub</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="/img/skills/responsive-UI.png" alt="Responsive UI">
+                        <p>Responsive <br>UI</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Relevant Courses -->
+            <div class="skill-box">
+                <h3>Relevant <span class="gold">Courses</span></h3>
+                <div class="skill-items courses">
+                    <div class="course-item">
+                        <i class="fa-solid fa-microchip"></i>
+                        <p>Computer Organization</p>
+                    </div>
+                    <div class="course-item">
+                        <i class="fa-solid fa-infinity"></i>
+                        <p>Discrete Math</p>
+                    </div>
+                    <div class="course-item">
+                        <i class="fa-solid fa-cubes"></i>
+                        <p>OOP</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EXPERIENCES -->
+    <section class="experiences" id="experiences">
+        <div class="exp-header">
+            <h2>My <span class="gold">Experiences</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="timeline">
+
+            <!-- Item 1 - Left -->
+            <div class="tl-item left">
+                <div class="tl-content">
+                    <div class="tl-top">
+                        <h3>Web Developer</h3>
+                        <span class="tl-badge">Nov 2025 – Present</span>
+                    </div>
+                    <p class="tl-company"><i class="fa-solid fa-building"></i> HackWIT</p>
+                    <p class="tl-location"><i class="fa-solid fa-location-dot"></i> Boston, MA · Hybrid</p>
+                    <p class="tl-desc">Developing and maintaining the contact page of the HackWIT website as part of the tech team.</p>
+                    <ul class="tl-list">
+                        <li>Build and manage the contact page using Svelte, TypeScript, and Tailwind CSS.</li>
+                        <li>Partner with team members to gather feedback and refactor the codebase.</li>
+                        <li>Apply teamwork, communication, and project management skills in a real-world environment.</li>
+                    </ul>
+                    <div class="tl-tags">
+                        <span>Svelte</span>
+                        <span>TypeScript</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="tl-center"><div class="tl-dot"></div></div>
+                <div class="tl-empty"></div>
+            </div>
+
+            <!-- Item 2 - Right -->
+            <div class="tl-item right">
+                <div class="tl-empty"></div>
+                <div class="tl-center"><div class="tl-dot"></div></div>
+                <div class="tl-content">
+                    <div class="tl-top">
+                        <h3>Club Member</h3>
+                        <span class="tl-badge">Sep 2025 – Present</span>
+                    </div>
+                    <p class="tl-company"><i class="fa-solid fa-building"></i> Wentworth Coding Club</p>
+                    <p class="tl-location"><i class="fa-solid fa-location-dot"></i> Boston, MA · Hybrid</p>
+                    <p class="tl-desc">A member of the Wentworth Coding Club, focused on building technical skills and collaborating with like-minded peers.</p>
+                    <ul class="tl-list">
+                        <li>Developing foundational knowledge of GitHub workflows including repositories, branches, and pull requests.</li>
+                        <li>Managing projects through version control and timeline tracking.</li>
+                        <li>Collaborating with peers on coding challenges and problem-solving exercises.</li>
+                    </ul>
+                    <div class="tl-tags">
+                        <span>GitHub</span>
+                        <span>Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 - Left -->
+            <div class="tl-item left">
+                <div class="tl-content">
+                    <div class="tl-top">
+                        <h3>Code-A-Thon Competitor</h3>
+                        <span class="tl-badge">Jan 2026</span>
+                    </div>
+                    <p class="tl-company"><i class="fa-solid fa-building"></i> CodeWIT</p>
+                    <p class="tl-location"><i class="fa-solid fa-location-dot"></i> Boston, MA · On-site</p>
+                    <p class="tl-desc">Participated in CodeWIT, Wentworth's annual coding competition.</p>
+                    <ul class="tl-list">
+                        <li>Practiced Java concepts to tackle algorithmic problems under timed conditions.</li>
+                        <li>Explored Data Structures and reinforced Discrete Mathematics topics.</li>
+                        <li>Strengthened analytical thinking and problem-solving skills.</li>
+                    </ul>
+                    <div class="tl-tags">
+                        <span>Java</span>
+                        <span>Problem Solving</span>
+                        <span>Data Structures</span>
+                    </div>
+                </div>
+                <div class="tl-center"><div class="tl-dot"></div></div>
+                <div class="tl-empty"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+        <div class="projects-header">
+            <h2>My <span class="gold">Projects</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="projects-grid">
+
+            <!-- Project 1: HackWIT -->
+            <div class="project-card">
+                <div class="project-img" style="background: #f6fbf4;">
+                    <img src="/img/hackwit.jpg" alt="HackWIT Contact Page">
+                </div>
+                <div class="project-body">
+                    <div class="project-top">
+                        <h3>HackWIT Contact Page</h3>
+                        <span class="project-date">Nov 2025 – Present</span>
+                    </div>
+                    <p class="project-stack">Svelte · Tailwind CSS · Vite · TypeScript</p>
+                    <p class="project-desc">Design and develop the HackWIT contact page using Svelte, Tailwind CSS, and Vite to improve event visibility and user engagement. Refactored components and implemented responsive design patterns for cross-device compatibility.</p>
+                    <div class="project-tags">
+                        <span>Svelte</span>
+                        <span>TypeScript</span>
+                        <span>Tailwind CSS</span>
+                        <span>Vite</span>
+                    </div>
+                    <div class="project-btns">
+                        <a href="https://github.com/Thang-H-Pham/hackwit" target="_blank" class="btn-github">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Tic Tac Toe -->
+            <div class="project-card">
+                <div class="project-img" style="background: #f6fbf4;">
+                    <img src="/img/tic_tac_toe.png" alt="HackWIT Contact Page">
+                </div>
+                <div class="project-body">
+                    <div class="project-top">
+                        <h3>Tic Tac Toe</h3>
+                        <span class="project-date">Nov – Dec 2025</span>
+                    </div>
+                    <p class="project-stack">Java</p>
+                    <p class="project-desc">Built a turn-based 3×3 Tic Tac Toe game in Java using modular methods, 2D arrays for board modeling, and structured control flow. Implemented win/tie/lose validation and file I/O to persist game outcomes and display historical results dynamically.</p>
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>OOP</span>
+                        <span>2D Arrays</span>
+                        <span>File I/O</span>
+                    </div>
+                    <div class="project-btns">
+                        <a href="https://github.com/Thang-H-Pham/Tic-Tac-Toe" target="_blank" class="btn-github">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="contact-header">
+            <h2>Let's <span class="gold">Get In Touch</span></h2>
+            <p>Let's build something together!</p>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-left">
+                <h3>Let's create something amazing together</h3>
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <span class="label">Email</span>
+                            <p>thanghpham1506@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <span class="label">Phone</span>
+                            <p>+1 (857) 233-3620</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <span class="label">Location</span>
+                            <p>Boston, MA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-right">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="name" placeholder="Your name">
+                    <span class="error" id="name-error">Name is required.</span>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="your.email@example.com">
+                    <span class="error" id="email-error">Please enter a valid email.</span>
+                </div>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" id="subject" placeholder="What's this about?">
+                    <span class="error" id="subject-error">Subject is required.</span>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea id="message" placeholder="Tell me about your project..."></textarea>
+                    <span class="error" id="message-error">Message is required.</span>
+                </div>
+                <button class="btn-send" id="sendBtn">
+                    <i class="fa-solid fa-paper-plane"></i> Send Message
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Copyright © <span id="year"></span> Thang Pham. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="/js/year.js"></script>
+    <script src="/js/nav.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/contact.js"></script>
+
+</body>
+</html>

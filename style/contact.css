@@ -1,0 +1,174 @@
+/* ========================== CONTACT SECTION ========================== */
+.contact {
+    padding: 62px;
+    padding-bottom: 0;
+}
+ 
+.contact-header {
+    text-align: center;
+    margin-bottom: 52px;
+}
+ 
+.contact-header h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+ 
+.contact-header p {
+    color: #cce0f0;
+    font-size: 18px;
+    margin: 0;
+}
+
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+    padding-right: 80px;  /
+}
+ 
+.contact-left {
+    padding-top: 30px;
+    margin-left: 150px;
+}
+ 
+.contact-left h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+ 
+.contact-left p {
+    color: #cce0f0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 30px;
+}
+ 
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ 
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+ 
+.contact-item i {
+    font-size: 20px;
+    color: #ffffff;
+    background: rgba(255,255,255,0.1);
+    padding: 12px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.contact-item .label {
+    font-size: 12px;
+    color: #cce0f0;
+    display: block;
+}
+ 
+.contact-item p {
+    margin: 2px 0 0;
+    font-weight: 700;
+    font-size: 17px;
+    color: #ffffff;
+}
+ 
+/* ========================== FORM ========================== */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+ 
+.form-group label {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+}
+ 
+.form-group input,
+.form-group textarea {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    font-family: "Lexend", sans-serif;
+}
+ 
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255,255,255,0.4);
+}
+ 
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: rgba(255,255,255,0.4);
+}
+ 
+.form-group textarea {
+    height: 130px;
+}
+ 
+/* ========================== ERROR MESSAGES ========================== */
+.error {
+    font-size: 12px;
+    color: #ff6b6b;
+    margin-top: 4px;
+    display: none;
+}
+ 
+.error.show {
+    display: block;
+}
+ 
+.input-error {
+    border-color: #ff6b6b !important;
+}
+ 
+.input-error:focus {
+    border-color: #ff6b6b !important;
+}
+ 
+/* ========================== SEND BUTTON ========================== */
+.btn-send {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #54ACBF, #26658C);
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Lexend", sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+}
+ 
+.btn-send:hover {
+    opacity: 70%;
+}
+ 
+.underline {
+    margin-top: 25px;
+}
