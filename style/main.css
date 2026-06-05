@@ -185,7 +185,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 14px;
-    max-width: 700px;
 }
 
 .about-me .right .name, .about-me .right .role {
