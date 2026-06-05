@@ -1,11 +1,11 @@
-/* ========================== PROJECTS ========================== */
 .projects {
     padding: 80px;
+    margin-bottom: 50px;
 }
 
 .projects-header {
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
 .projects-header h2 {
@@ -35,10 +35,9 @@
     transform: translateY(-6px);
 }
 
-/* Image area */
 .project-img {
     width: 100%;
-    height: 300px;
+    height: 200px;
     overflow: hidden;
     border-bottom: 1px solid rgba(255,255,255,0.08);
 }
@@ -54,18 +53,16 @@
     background-color: #f6fbf4;
 }
 
-
 .project-card:hover .project-img img {
     transform: scale(1.05);
 }
 
-/* Fallback when no image */
 .project-card #tic-tac-toe {
-    height: 300px;
+    height: 200px;
 }
-/* Card body */
+
 .project-body {
-    padding: 24px;
+    padding: 20px;
 }
 
 .project-top {
@@ -78,14 +75,14 @@
 }
 
 .project-top h3 {
-    font-size: 27px;
+    font-size: 20px;
     font-weight: 700;
     color: #ffffff;
     margin: 0;
 }
 
 .project-date {
-    font-size: 14px;
+    font-size: 13px;
     color: #f5a623;
     background: rgba(245,166,35,0.1);
     border: 1px solid rgba(245,166,35,0.3);
@@ -95,31 +92,31 @@
 }
 
 .project-stack {
-    font-size: 16px;
+    font-size: 14px;
     color: #f5a623;
     font-weight: 600;
-    margin: 0 0 10px;
+    margin: 0 0 8px;
 }
 
 .project-desc {
-    font-size: 17px;
+    font-size: 15px;
     color: #cce0f0;
-    line-height: 1.7;
-    margin: 0 0 16px;
+    line-height: 1.6;
+    margin: 0 0 14px;
 }
 
 .project-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .project-tags span {
-    font-size: 13px;
+    font-size: 12px;
     background: rgba(255,255,255,0.08);
     color: #cce0f0;
-    padding: 4px 12px;
+    padding: 4px 10px;
     border-radius: 20px;
     border: 1px solid rgba(255,255,255,0.12);
 }
@@ -136,9 +133,9 @@
     background: transparent;
     border: 1.5px solid rgba(255,255,255,0.3);
     color: #ffffff;
-    padding: 8px 18px;
+    padding: 7px 16px;
     border-radius: 20px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     font-family: "Lexend", sans-serif;
     text-decoration: none;
@@ -156,9 +153,9 @@
     background: #f5a623;
     border: none;
     color: #011C40;
-    padding: 8px 18px;
+    padding: 7px 16px;
     border-radius: 20px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     font-family: "Lexend", sans-serif;
     text-decoration: none;
@@ -166,5 +163,5 @@
 }
 
 .btn-live:hover {
-    background: #f5a623;
+    background: #e09510;
 }
