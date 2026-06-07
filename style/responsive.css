@@ -662,7 +662,7 @@
         height: 200px;
     }
     .skill-items {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto;
     }
 
     /* Projects */
