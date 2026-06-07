@@ -1,6 +1,7 @@
 .projects {
     padding: 80px;
     margin-bottom: 50px;
+    margin-top: 250px;
 }
 
 .projects-header {
@@ -17,7 +18,7 @@
 
 .projects-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto auto;
     gap: 30px;
     margin: 0 auto;
 }
@@ -49,10 +50,10 @@
     transition: transform 0.3s ease;
 }
 
+
 .project-img img, #HackWIT {
     background-color: #f6fbf4;
 }
-
 .project-card:hover .project-img img {
     transform: scale(1.05);
 }
