@@ -3,103 +3,34 @@
      XS : up to 576px
      SM : 577px – 768px
      MD : 769px – 992px
-     LG : 993px – 1200px
-     XL : 1201px and 1370px
+     LG : 993px – 1370px
 ============================================================ */
-
-
-/* ========================== SUPER LARGE DEVICES (993px – 1200px) ========================== */
-@media (min-width: 1201px) and (max-width: 1370px) {
-    /* Navbar */
-    .navbar {
-        padding: 0 24px;
-        height: auto;
-        padding: 16px 24px;
+@media (min-width: 1401px) {
+    .skills {
+        padding: 0 80px;
     }
-    .navbar h1 {
-        font-size: 22px;
+    .skills.grid {
+        grid-template-columns: auto auto;
     }
-    .navbar .right {
-        gap: 20px;
-    }
-    .navbar a {
-        font-size: 13px;
+       /* Scroll bar */
+    .about-me {
+        scroll-margin-top: 100px;
     }
 
-    /* Hero */
-    .hero-section {
-        height: auto;
-        margin-left: calc(5vw + 10px);
-    }
-    .hero-left {
-        margin-left: 0;
-        gap: 14px;
-    }
-    .hero-left h3 {
-        font-size: 16px;
-    }
-    .hero-left h2 {
-        font-size: 40px;
-    }
-    .hero-left p {
-        font-size: 14px;
-    }
-    .hero-left button {
-        height: 44px;
-        padding: 8px 16px;
-        border-width: 2px;
-    }
-    .hero-left button i {
-        font-size: 16px;
-    }
-    .hero-left button p {
-        font-size: 10px;
-    }
-    .hero-section img {
-        width: 280px;
-        height: 360px;
-    }
-    .hero-section button {
-        display: flex; 
-        flex-direction: row;
+    .projects, .experiences {
+        scroll-margin: 50px;
     }
 
-    /* About */
-    .about-content {
-        gap: 30px;
+    .contact {
+        scroll-margin-top: 120px;
     }
-    .about-me .left img {
-        width: 300px;
-        height: 300px;
-    }
-    .about-me .right p {
-        font-size: 15px;
-    }
-    div[class="underline line"] {
-        width: 100%;
-    }
-    /* Skills */
-    .skills-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-    .certification {
-        grid-column: span 2;
-    }
-
-    /* Experiences */
-    .exp-grid {
-        grid-template-columns: auto;
-    }
-
-    /* Contact */
-    .contact-content {
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
+    .skills {
+        scroll-margin-top: 150px;
     }
 }
 
-/* ========================== LARGE DEVICES (993px – 1200px) ========================== */
-@media (min-width: 993px) and (max-width: 1200px) {
+/* ========================== LARGE DEVICES (993px – 1370px) ========================== */
+@media (min-width: 993px) and (max-width: 1400px) {
 
     /* Navbar */
     .navbar {
@@ -174,6 +105,9 @@
         width: 100%;
     }
     /* Skills */
+    .skills {
+        padding: 0 80px;
+    }
     .skills-grid {
         grid-template-columns: auto;
     }
@@ -301,11 +235,25 @@
         display: block;
     }
     /* Skills */
+    .skills {
+        padding: 0 80px;
+    }
     .skills-grid {
         grid-template-columns: auto;
     }
     .certification {
         grid-column: 1;
+    }
+        .course-item {
+        height: 200px;
+        width: 200px;
+    }
+    .course-item img {
+        height: 100px;
+        width: 350px;
+    }
+    .course-item p {
+        font-size: 14px;
     }
 
     /* Projects */
@@ -341,6 +289,9 @@
 
     .contact {
         scroll-margin-top: 120px;
+    }
+    .skill {
+        scroll-margin-top: -50px;
     }
 }
 
@@ -454,15 +405,35 @@
     /* Skills */
     .skills {
         padding: 40px 30px;
+        margin-right: 20px;
     }
     .skills-grid {
         grid-template-columns: auto;
     }
-    .certification {
-        grid-column: 1;
-    }
     .skill-box h3 {
-        font-size: 18px;
+       font-size: 18px;
+    }
+    .skill-box {
+        padding-right: 15px;
+    }
+    .skill-items {
+        grid-template-columns: auto auto auto;
+    }
+    .certification .skill-list {
+        grid-template-columns: auto;
+        gap: 20px;
+        justify-content: center;
+    }
+    .course-item {
+        height: 400px;
+        width: 400px;
+    }
+    .course-item img {
+        height: 300px;
+        width: 350px;
+    }
+    .course-item p {
+        font-size: 20px;
     }
 
     /* Projects */
@@ -663,15 +634,23 @@
         font-size: 30px;
     }
     .skills-grid {
-        grid-template-columns: 1fr;
-        width: calc(100w - 50px); 
+        grid-template-columns: auto;
     }
-    .certification {
-        grid-column: span 1;
+    .skill-items.courses {
+        grid-template-columns: auto;
     }
-    .skiil-box {
-        padding-left: 50px;
+
+    .certification .skill-list {
+        grid-template-columns: auto;
+        gap: 20px;
+        justify-content: center;
     }
+    .course-item {
+        width: 50vw;
+        height: fit-content;
+    }
+
+    .certification 
     .skill-box h3 {
         font-size: 20px;
     }
@@ -681,6 +660,9 @@
     .course-item img {
         width: 200px;
         height: 200px;
+    }
+    .skill-items {
+        grid-template-columns: auto auto auto;
     }
 
     /* Projects */
@@ -766,5 +748,8 @@
     }
     .projects, .experiences, .contact, .skills {
         scroll-margin-top: 100px;
+    }
+    .about-me {
+        scroll-margin-top: 120px;
     }
 }
