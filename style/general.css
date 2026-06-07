@@ -80,7 +80,7 @@ footer {
 }
 
 .about-me {
-    scroll-margin-top: 200px;
+    scroll-margin-top: 160px !important;
 }
 
 .skills {
@@ -88,7 +88,7 @@ footer {
 }
 
 .projects {
-    scroll-margin-top: 140px;
+    scroll-margin-top: 140px !important;
 }
 
 .contact {
@@ -96,5 +96,5 @@ footer {
 }
 
 .experiences {
-    scroll-margin-top: 250px;
+    scroll-margin-top: 170px !important;
 }
