@@ -17,7 +17,7 @@
 
 .exp-grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr;
     width: 100vh / 3;
     gap: 30px;
 }

@@ -14,7 +14,7 @@
     }
        /* Scroll bar */
     .about-me {
-        scroll-margin-top: 100px;
+        margin-bottom: 70px;
     }
 
     .projects, .experiences {
@@ -137,12 +137,12 @@
     }
 
     /* Scroll bar */
-    .about-me {
-        scroll-margin-top: 100px;
-    }
 
-    .projects, .experiences {
+    .projects {
         scroll-margin: 50px;
+    }
+    .experiences {
+        margin-top: 0;
     }
 
     .contact {
@@ -279,9 +279,6 @@
     }
 
     /* Scroll bar */
-    .about-me {
-        scroll-margin-top: 100px;
-    }
 
     .projects, .experiences {
         scroll-margin: 50px;
