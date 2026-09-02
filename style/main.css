@@ -268,7 +268,7 @@ div[class="underline line"] {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 56vw;
     gap: 30px;
 }
 
@@ -295,7 +295,7 @@ div[class="underline line"] {
 
 .skill-items {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(5, auto);
     text-align: center;
     gap: 12px;
 }
@@ -351,14 +351,14 @@ div[class="underline line"] {
 
 .certification .skill-list {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .skill-items.courses {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 5px;
 }
 
 .course-item {
@@ -379,7 +379,7 @@ div[class="underline line"] {
 }
 
 .course-item img {
-    width: 14vw;
+    width: 200px;
     height: auto;
     object-fit: contain;
 }

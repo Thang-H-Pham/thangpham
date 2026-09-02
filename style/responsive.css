@@ -5,13 +5,18 @@
      MD : 769px – 992px
      LG : 993px – 1370px
 ============================================================ */
-@media (min-width: 1401px) {
+@media (min-width: 1371px) {
     .skills {
         padding: 0 80px;
     }
-    .skills.grid {
+    .skills-grid {
         grid-template-columns: auto auto;
     }
+    .certification .skill-list {
+        gap: 20px;
+        justify-content: center;
+    }
+
        /* Scroll bar */
     .about-me {
         margin-bottom: 70px;
@@ -30,7 +35,7 @@
 }
 
 /* ========================== LARGE DEVICES (993px – 1370px) ========================== */
-@media (min-width: 993px) and (max-width: 1400px) {
+@media (min-width: 993px) and (max-width: 1370px) {
 
     /* Navbar */
     .navbar {
@@ -51,7 +56,7 @@
     /* Hero */
     .hero-section {
         height: auto;
-        margin-left: calc(5vw + 10px);
+        padding-left: calc(5vw + 60px);
     }
     .hero-left {
         margin-left: 0;
@@ -81,8 +86,8 @@
         width: 280px;
         height: 360px;
     }
-    .hero-section button {
-        display: flex; 
+    .hero-left .button {
+        display: flex;
         flex-direction: row;
     }
 
@@ -113,6 +118,11 @@
     }
     .certification {
         grid-column: 1;
+    }
+    .certification .skill-list {
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+        justify-content: center;
     }
 
     /* Projects */
@@ -205,8 +215,8 @@
         width: 280px;
         height: 360px;
     }
-    .hero-section button {
-        display: flex; 
+    .hero-left .button {
+        display: flex;
         flex-direction: row;
     }
 
@@ -244,16 +254,21 @@
     .certification {
         grid-column: 1;
     }
-        .course-item {
+    .course-item {
         height: 200px;
         width: 200px;
     }
     .course-item img {
         height: 100px;
-        width: 350px;
+        width: 180px;
     }
     .course-item p {
         font-size: 14px;
+    }
+    .certification .skill-list {
+        grid-template-columns: auto auto;
+        gap: 20px;
+        justify-content: center;
     }
 
     /* Projects */
@@ -287,7 +302,7 @@
     .contact {
         scroll-margin-top: 120px;
     }
-    .skill {
+    .skills {
         scroll-margin-top: -50px;
     }
 }
@@ -422,15 +437,15 @@
         justify-content: center;
     }
     .course-item {
-        height: 400px;
-        width: 400px;
+        height: 260px;
+        width: 260px;
     }
     .course-item img {
-        height: 300px;
-        width: 350px;
+        height: 180px;
+        width: 220px;
     }
     .course-item p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     /* Projects */
@@ -507,7 +522,8 @@
         padding: 30px 20px;
         height: auto;
         text-align: center;
-        margin: 50px;
+        margin: 0;
+        margin-top: 20px;
     }
     
     .hero-left {
@@ -557,9 +573,6 @@
         display: flex;
         justify-content: center;
         margin-top: 20px;
-    }
-
-    .hero-right {
         order: 1;
     }
 
@@ -597,9 +610,12 @@
         display: block;
     }
 
+    /* FIX: asymmetric 50px left padding fought with text-align:center
+       and the already-centered flex container, pulling the text
+       visibly off-center and eating into the narrow available width.
+       Removed so centering is symmetric. */
     .about-me .right p {
         font-size: 14px;
-        padding-left: 50px;
     }
     .about-me .right .name,
     .about-me .right .role {
@@ -612,8 +628,8 @@
     }
     .about-buttons {
         flex-direction: row;
+        justify-content: center;
         gap: 10px;
-        padding-left: 50px;
     }
 
     .btn-gold {
@@ -633,8 +649,13 @@
     .skills-grid {
         grid-template-columns: auto;
     }
+    /* FIX: base ".skill-items.courses" is a flex container
+       (flex-direction: row; flex-wrap: wrap), not a grid, so
+       "grid-template-columns" had no effect at all. Stack it with
+       flex properties instead to actually get one column. */
     .skill-items.courses {
-        grid-template-columns: auto;
+        flex-direction: column;
+        align-items: center;
     }
 
     .certification .skill-list {
@@ -642,24 +663,35 @@
         gap: 20px;
         justify-content: center;
     }
+    /* FIX: width was 50vw while the child img was fixed at 200px —
+       on phones narrower than ~400px (50vw < 200px) the image
+       overflowed its own container. Use a floor so the box is
+       always at least as big as the image, and let the image scale
+       down with the container via max-width instead of a fixed size. */
     .course-item {
-        width: 50vw;
+        width: max(200px, 50vw);
         height: fit-content;
     }
 
-    .certification 
-    .skill-box h3 {
+    /* FIX: was written as ".certification\n.skill-box h3", which is
+       just the descendant selector ".certification .skill-box h3"
+       (a linebreak in a selector is still whitespace) — kept the
+       same targeting, just cleaned up formatting so it isn't
+       misread as two separate/broken rules. */
+    .certification .skill-box h3 {
         font-size: 20px;
     }
     .skill-item p {
         font-size: 13px;
     }
     .course-item img {
-        width: 200px;
+        width: 100%;
+        max-width: 200px;
         height: 200px;
     }
     .skill-items {
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 
     /* Projects */
