@@ -41,58 +41,8 @@
         <div class="page-header">
             <h1>My <span class="gold">Work</span></h1>
             <div class="underline"></div>
-            <p>The teams I've worked with and the projects I've built.</p>
+            <p>The projects I've built and the teams I've worked with.</p>
         </div>
-
-        <!-- EXPERIENCES -->
-        <section class="section">
-            <div class="section-header">
-                <h2>My <span class="gold">Experiences</span></h2>
-                <div class="underline"></div>
-            </div>
-            <div class="card-grid">
-
-                <div class="exp-card">
-                    <div class="exp-top">
-                        <h3>Web Developer</h3>
-                        <span class="exp-badge">Nov 2025 – Present</span>
-                    </div>
-                    <p class="exp-company"><i class="fa-solid fa-building"></i> HackBoston</p>
-                    <p class="exp-location"><i class="fa-solid fa-location-dot"></i> Boston, MA · Hybrid</p>
-                    <p class="exp-desc">Developing and maintaining the contact page of the HackBoston website as part of the tech team.</p>
-                    <ul class="exp-list">
-                        <li>Design the layout for the HackBoston team page using Svelte and Tailwind CSS, structuring team organizers' profiles (names and roles) for clear presentation.</li>
-                        <li>Collected UI feedback from teammates and iterated on color scheme, image sizing, and typography to improve visual consistency.</li>
-                        <li>Maintain and extend the broader HackBoston website by refactoring Svelte components for modularity and responsive rendering.</li>
-                    </ul>
-                    <div class="tags">
-                        <span>Svelte</span>
-                        <span>TypeScript</span>
-                        <span>Tailwind CSS</span>
-                    </div>
-                </div>
-
-                <div class="exp-card">
-                    <div class="exp-top">
-                        <h3>Code-A-Thon Competitor</h3>
-                        <span class="exp-badge">Jan 2026</span>
-                    </div>
-                    <p class="exp-company"><i class="fa-solid fa-building"></i> CodeWIT</p>
-                    <p class="exp-location"><i class="fa-solid fa-location-dot"></i> Boston, MA · On-site</p>
-                    <p class="exp-desc">Participated in CodeWIT, Wentworth's annual coding competition.</p>
-                    <ul class="exp-list">
-                        <li>Solved 22 of 50 mixed-difficulty problems in a full-day, self-paced HackerRank challenge limited to registered students from all years class</li>
-                        <li>Designed, validated, and debugged Java solutions using arrays, ArrayLists, and exception handling, earning partial and full credit across a range of problem difficulties.</li>
-                    </ul>
-                    <div class="tags">
-                        <span>Java</span>
-                        <span>Problem Solving</span>
-                        <span>Data Structures</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
 
         <!-- PROJECTS -->
         <section class="section">
@@ -112,8 +62,8 @@
                             <span class="project-date">Nov – Dec 2025</span>
                         </div>
                         <p class="project-stack">Java</p>
-                        <p class="project-desc">Built a console-based Tic-Tac-Toe game in Java for a human player versus a randomized computer opponent, using a dual-array design to separate game state from the on-screen position reference grid.</p>
-                        <p class="project-desc">Implemented win/tie detection across rows, columns, and diagonals, input validation with exception handling for invalid or duplicate moves, and file I/O to persist and display win/loss/tie statistics across rounds.</p>
+                        <p class="project-desc">Developed a console-based game with a randomized computer opponent, win/tie detection across rows, columns, and diagonals, and input validation using exception handling</p>
+                        <p class="project-desc">Persisted win/loss/tie statistics across rounds using file I/O</p>
                         <div class="tags">
                             <span>Java</span>
                             <span>Methods</span>
@@ -130,7 +80,7 @@
 
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="./img/portfolio-project.png" alt="Responsive Portfolio Website">
+                        <img src="./img/portfolio-project.png?v=2" alt="Responsive Portfolio Website">
                     </div>
                     <div class="project-body">
                         <div class="project-top">
@@ -138,9 +88,9 @@
                             <span class="project-date">April 2026 – Present</span>
                         </div>
                         <p class="project-stack">HTML · CSS · JavaScript</p>
-                        <p class="project-desc">Built a fully responsive personal portfolio website from scratch using HTML, CSS, and JavaScript, featuring a modular CSS architecture and custom breakpoints across devices</p>
-                        <p class="project-desc">Structured the site as multiple static pages with a shared layout system and a JavaScript hamburger menu for small screens</p>
-                        <p class="project-desc">Integrated an EmailJS-powered contact form with client-side validation for direct messaging without a backend server</p>
+                        <p class="project-desc">Built and deployed a responsive portfolio from scratch with modular CSS and custom breakpoints for mobile, tablet, and desktop</p>
+                        <p class="project-desc">Rebuilt the site with Claude Code, replacing a 783-line breakpoint stylesheet with a mobile-first layout and running headless Chrome checks at seven screen widths from 360px to 1920px</p>
+                        <p class="project-desc">Integrated an EmailJS contact form with client-side validation, enabling direct messages without a backend server</p>
                         <div class="tags">
                             <span>HTML</span>
                             <span>CSS</span>
@@ -151,6 +101,55 @@
                                 <i class="fa-brands fa-github"></i> GitHub
                             </a>
                         </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EXPERIENCES -->
+        <section class="section">
+            <div class="section-header">
+                <h2>My <span class="gold">Experiences</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="card-grid">
+
+                <div class="exp-card">
+                    <div class="exp-top">
+                        <h3>Web Developer</h3>
+                        <span class="exp-badge">Nov 2025 – Present</span>
+                    </div>
+                    <p class="exp-company"><i class="fa-solid fa-building"></i> HackBoston</p>
+                    <p class="exp-location"><i class="fa-solid fa-location-dot"></i> Boston, MA · Hybrid</p>
+                    <p class="exp-desc">Building the team page of the HackBoston website as part of the tech team.</p>
+                    <ul class="exp-list">
+                        <li>Design and build the HackBoston team page using Svelte, TypeScript, and Tailwind CSS, with a responsive layout for 7 member profiles (names and roles) across mobile and desktop.</li>
+                        <li>Iterate on color scheme and typography based on team feedback to align the page with the site's visual identity.</li>
+                    </ul>
+                    <div class="tags">
+                        <span>Svelte</span>
+                        <span>TypeScript</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-top">
+                        <h3>Code-A-Thon Competitor</h3>
+                        <span class="exp-badge">Jan 2026</span>
+                    </div>
+                    <p class="exp-company"><i class="fa-solid fa-building"></i> CodeWIT</p>
+                    <p class="exp-location"><i class="fa-solid fa-location-dot"></i> Boston, MA · On-site</p>
+                    <p class="exp-desc">Participated in CodeWIT, Wentworth's annual coding competition.</p>
+                    <ul class="exp-list">
+                        <li>Solved 22 of 50 mixed-difficulty Java problems in a full-day, self-paced HackerRank challenge open to Wentworth students of all class years</li>
+                        <li>Applied arrays, ArrayLists, and exception handling to design, test, and debug solutions under time constraints</li>
+                    </ul>
+                    <div class="tags">
+                        <span>Java</span>
+                        <span>Problem Solving</span>
+                        <span>Data Structures</span>
                     </div>
                 </div>
 

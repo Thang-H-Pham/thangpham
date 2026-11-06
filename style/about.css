@@ -72,7 +72,7 @@
 
 .skill-box {
     min-width: 0;
-    padding: clamp(18px, 2.5vw, 28px);
+    padding: clamp(14px, 2.5vw, 28px);
     background: var(--card-bg);
     border: 1px solid var(--card-border);
     border-radius: var(--radius);
@@ -95,9 +95,9 @@
 .skill-item {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     min-width: 0;
-    padding: 8px;
+    padding: 8px 4px;
     border-radius: 10px;
     transition: background 0.2s ease, transform 0.2s ease;
 }
@@ -176,7 +176,7 @@
 @media (min-width: 640px) {
     .skill-items {
         /* auto-fill keeps columns aligned between cards with different item counts */
-        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 
     .cert-grid {
@@ -201,7 +201,8 @@
         justify-content: flex-start;
     }
 
+    /* Four groups: 2 x 2 keeps every card the same width with no gap in the last row */
     .skills-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }

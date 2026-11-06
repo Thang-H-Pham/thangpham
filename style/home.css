@@ -42,6 +42,15 @@ main {
     color: var(--text-muted);
 }
 
+.hero-text .seeking {
+    max-width: 56ch;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--gold);
+}
+
 .hero-text .btn-row {
     justify-content: center;
     margin-top: 8px;
