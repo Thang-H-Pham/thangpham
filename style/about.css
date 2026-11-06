@@ -1,0 +1,207 @@
+/* ========================== BIO ========================== */
+.bio {
+    display: grid;
+    gap: clamp(28px, 5vw, 60px);
+    align-items: center;
+    padding-bottom: var(--section-space);
+}
+
+.bio-photo {
+    display: flex;
+    justify-content: center;
+}
+
+.bio-photo img {
+    width: min(100%, 260px);
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    border: clamp(8px, 1.2vw, 15px) solid var(--gold);
+}
+
+.bio-photo img:hover {
+    animation-play-state: paused;
+}
+
+.bio-text {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+}
+
+.bio-text p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+.bio-text .name,
+.bio-text .role {
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 600;
+}
+
+.bio-text .name {
+    color: var(--text);
+}
+
+.bio-text .role {
+    color: var(--gold);
+}
+
+.bio-divider {
+    height: 2px;
+    margin-block: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+}
+
+.bio-text .btn-row {
+    justify-content: center;
+    margin-top: 8px;
+}
+
+/* ========================== SKILLS ========================== */
+.skills-grid {
+    display: grid;
+    gap: 24px;
+}
+
+.skill-box {
+    min-width: 0;
+    padding: clamp(18px, 2.5vw, 28px);
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+}
+
+.skill-box h3 {
+    margin: 0 0 18px;
+    padding-bottom: 12px;
+    font-size: clamp(18px, 2vw, 22px);
+    font-weight: 700;
+    border-bottom: 2px solid var(--gold-line);
+}
+
+.skill-items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    padding: 8px;
+    border-radius: 10px;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.skill-item:hover {
+    background: var(--gold-soft);
+    transform: translateY(-4px);
+}
+
+.skill-item img,
+.skill-item i {
+    flex-shrink: 0;
+    width: 28px;
+}
+
+.skill-item img {
+    height: 28px;
+    object-fit: contain;
+}
+
+.skill-item i {
+    font-size: 28px;
+    text-align: center;
+    color: var(--gold);
+}
+
+.skill-item p {
+    min-width: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+/* ========================== CERTIFICATIONS ========================== */
+.cert-grid {
+    display: grid;
+    gap: 24px;
+}
+
+.cert-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    transition: background 0.2s ease;
+}
+
+.cert-card:hover {
+    background: var(--gold-soft);
+}
+
+.cert-card a {
+    width: 100%;
+}
+
+.cert-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+}
+
+.cert-card p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+/* ========================== BREAKPOINTS ========================== */
+@media (min-width: 640px) {
+    .skill-items {
+        /* auto-fill keeps columns aligned between cards with different item counts */
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+
+    .cert-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 960px) {
+    .bio {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .bio-photo img {
+        width: min(100%, 420px);
+    }
+
+    .bio-text {
+        text-align: left;
+    }
+
+    .bio-text .btn-row {
+        justify-content: flex-start;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thang Pham</title>
+    <meta name="description" content="Portfolio of Thang Pham, a Computer Science undergraduate at Wentworth Institute of Technology.">
 
-    <!-- EmailJS -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Lets the CSS collapse the nav into a hamburger only when JS is running -->
+    <script>document.documentElement.classList.add('js');</script>
 
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/b588c504a9.js" crossorigin="anonymous"></script>
@@ -15,405 +17,57 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
-    <!-- CSS — general must come last to override others -->
     <link rel="stylesheet" href="./style/general.css">
-    <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="./style/projects.css">
-    <link rel="stylesheet" href="./style/experiences.css">
-    <link rel="stylesheet" href="./style/contact.css">
-    <link rel="stylesheet" href="./style/responsive.css">
-
-    <title>Thang Pham</title>
+    <link rel="stylesheet" href="./style/home.css">
 </head>
 <body>
 
-    <!-- NAVIGATION BAR -->
-    <section class="navbar">
-        <div class="left">
-            <a href="index.html"><h1>Thang Pham</h1></a>
+    <header class="navbar">
+        <div class="navbar-inner container">
+            <a class="brand" href="index.html">Thang Pham</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links" id="site-nav" aria-label="Main">
+                <a href="index.html" aria-current="page">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="work.html">WORK</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
         </div>
-        <div class="right">
-            <p><a href="#home">HOME</a></p>
-            <p><a href="#about">ABOUT</a></p>
-            <p><a href="#skills">SKILLS</a></p>
-            <p><a href="#projects">PROJECTS</a></p>
-            <p><a href="#experiences">EXPERIENCES</a></p>
-            <p><a href="#contact">CONTACT</a></p>
-        </div>
-    </section>
+    </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero-section" id="home">
-        <div class="hero-left">
-            <h3>Hi, I'm Thang Pham</h3>
-                <h2>Computer Science <br>Undergraduate</h2>
-                <p>
-                    at Wentworth Institute of Technology with a
-                    foundation in Web Development, <br>building strong
-                    Java skills, exploring <span class="highlight">Data Structures &
-                    Algorithms</span>, <br>and pursuing a passion for
+    <main>
+        <section class="hero container">
+            <div class="hero-text">
+                <p class="eyebrow">Hi, I'm Thang Pham</p>
+                <h1>Computer Science Undergraduate</h1>
+                <p class="summary">
+                    at Wentworth Institute of Technology with a foundation in Web Development,
+                    building strong Java skills, exploring
+                    <span class="highlight">Data Structures &amp; Algorithms</span>,
+                    and pursuing a passion for
                     <span class="highlight">Artificial Intelligence.</span>
                 </p>
-                <div class="button">
-                    <button class="hero-btn" id="myButton">
-                        <i class="fa-solid fa-arrow-down"></i>
-                        <p>ABOUT ME</p>
-                    </button>
-                    <button class="hero-btn" id="myButton1">
-                        <i class="fa-solid fa-arrow-down"></i>
-                        <p>TECHNICAL SKILLS</p>
-                    </button>
-                </div>
-            </div>
-            <div class="hero-right">
-                <img src="./img/hero-pic.png" alt="hero section image">
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT ME -->
-    <section class="about-me" id="about">
-        <div class="about-header">
-            <h2>About <span class="gold">Me</span></h2>
-            <div class="underline"></div>
-        </div>
-        <div class="about-content">
-            <div class="left">
-                <img src="./img/About_Me.jpg" alt="my personal image">
-            </div>
-            <div class="right">
-                <p class="name">Full name: Thang Huu Pham 
-                <p class="role">Computer Science Sophomore Undergraduate <span class="block b2">– From Vietnam</span></p>
-                <div class="underline line"></div>
-                <p>
-                    I'm a sophomore student at Wentworth Institute of Technology (Class of 2029) majoring in Computer Science, with a current GPA of 3.95, interested in how AI is reshaping the way we live, work, and connect.
-                </p>
-                <p>
-                    I currently work as a Web Developer on the <span class="highlight">HackWIT</span> team, building real-world web experiences using <span class="highlight">Svelte, TypeScript, and Tailwind CSS</span> — modern tools that are similar to my foundation in <span class="highlight">HTML and CSS</span>.
-                </p>
-                <p>
-                    Outside of academics, I enjoy playing <span class="block">guitar, soccer, and tennis.</span>
-                </p>
-                <div class="about-buttons">
-                    <a href="/My Resume.pdf" target="_blank" class="btn-gold">
-                        View My Resume <i class="fa-solid fa-arrow-right"></i>
+                <div class="btn-row">
+                    <a class="btn btn-primary" href="work.html">
+                        View My Work <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/thanghpham/" target="_blank" class="btn-gold">
-                        View My LinkedIn <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    <a class="btn" href="about.html">About Me</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- TECHNICAL SKILLS -->
-    <section class="skills" id="skills">
-        <div class="skills-header">
-            <h2>My <span class="gold">Technical Skills</span></h2>
-            <div class="underline"></div>
-        </div>
-        <div class="skills-grid">
-
-            <!-- Programming Languages -->
-            <div class="skill-box">
-                <h3>Programming <span class="gold">Languages</span></h3>
-                <div class="skill-list">
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fa-brands fa-java"></i>
-                            <p>Java</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fa-brands fa-js"></i>
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="./img/skills/typescript.png" alt="TypeScript">
-                            <p>TypeScript</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="./img/skills/python.png" alt="Python">
-                            <p>Python</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="hero-photo">
+                <img class="glow" src="./img/hero-pic.png" alt="Portrait of Thang Pham">
             </div>
+        </section>
+    </main>
 
-            <!-- Web & Frameworks -->
-            <div class="skill-box">
-                <h3>Web & <span class="gold">Frameworks</span></h3>
-                <div class="skill-list">
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fa-brands fa-html5"></i>
-                            <p>HTML</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <p>CSS</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="./img/skills/tailwind.png" alt="Tailwind">
-                            <p>Tailwind CSS</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="./img/skills/svelte.png" alt="Svelte">
-                            <p>Svelte</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="./img/skills/vite.png" alt="Vite">
-                            <p>Vite</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Core Skills & Tools -->
-            <div class="skill-box">
-                <h3>Core Skills & <span class="gold">Tools</span></h3>
-                <div class="skill-list">
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <img src="./img/skills/dsa.png" alt="Data Structures">
-                            <p>Data Structures & Algorithms</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fa-brands fa-github"></i>
-                            <p>GitHub</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="./img/skills/responsive-UI.png" alt="Responsive UI">
-                            <p>Responsive UI</p>
-                        </div>
-                    </div>
-                    
-                </div>
-                
-            </div>
-
-            <!-- Certifications -->
-        <div class="skill-box certification">
-            <h3>My <span class="gold">Certifications</span></h3>
-            <div class="skill-list">
-                <div class="skill-items courses">
-                    <div class="course-item">
-                        <a href="https://www.freecodecamp.org/certification/thangphamhuu15/responsive-web-design-v9" target="_blank">
-                            <img src="./img/Certifications/Reponsive_Web_Design.png" alt="Responsive Web Design">
-                        </a>
-                        <p>Responsive Web Design</p>
-                    </div>
-                </div>
-                <div class="skill-items courses">
-                    <div class="course-item">
-                        <a href="https://www.freecodecamp.org/certification/thangphamhuu15/python-v9" target="_blank">
-                            <img src="./img/Certifications/Python_certification.png" alt="Responsive Web Design">
-                        </a>
-                        <p>Python</p>
-                    </div>
-                </div>
-                <div class="skill-items courses">
-                    <div class="course-item">
-                        <a href="https://verify.skilljar.com/c/6o75er7e2y9s" target="_blank">
-                            <img src="./img/Certifications/AI_Fluency_Framework_and_Foundations.png" alt="AI Fluency Framework & Foundations">
-                        </a>
-                        <p>AI Fluency: <br>Framework & Foundations</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- PROJECTS SECTION -->
-    <section class="projects" id="projects">
-        <div class="projects-header">
-            <h2>My <span class="gold">Projects</span></h2>
-            <div class="underline"></div>
-        </div>
-        <div class="projects-grid">
-
-            <!-- Project 1: Tic Tac Toe -->
-            <div class="project-card">
-                <div class="project-img" style="background: #f6fbf4;">
-                    <img src="./img/tic_tac_toe.png" alt="Tic Tac Toe">
-                </div>
-                <div class="project-body">
-                    <div class="project-top">
-                        <h3>Tic Tac Toe</h3>
-                        <span class="project-date">Nov – Dec 2025</span>
-                    </div>
-                    <p class="project-stack">Java</p>
-                    <p class="project-desc">Built a console-based Tic-Tac-Toe game in Java for a human player versus a randomized computer opponent, using a dual-array design to separate game state from the on-screen position reference grid.</p>
-                    <p class="project-desc">Implemented win/tie detection across rows, columns, and diagonals, input validation with exception handling for invalid or duplicate moves, and file I/O to persist and display win/loss/tie statistics across rounds.</p>
-                    <div class="project-tags">
-                        <span>Java</span>
-                        <span>Methods</span>
-                        <span>2D Arrays</span>
-                        <span>File I/O</span>
-                    </div>
-                    <div class="project-btns">
-                        <a href="https://github.com/Thang-H-Pham/Tic-Tac-Toe" target="_blank" class="btn-github">
-                            <i class="fa-brands fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 2: Responsive Portfolio Website -->
-            <div class="project-card">
-                <div class="project-img" style="background: #f6fbf4;">
-                    <img src="./img/portfolio-project.png" alt="Responsive Portfolio Website">
-                </div>
-                <div class="project-body">
-                    <div class="project-top">
-                        <h3>Responsive Portfolio Website</h3>
-                        <span class="project-date">April 2026 – Present</span>
-                    </div>
-                    <p class="project-stack">HTML · CSS · JavaScript</p>
-                    <p class="project-desc">Built a fully responsive personal portfolio website from scratch using HTML, CSS, and JavaScript, featuring a modular CSS architecture and custom breakpoints across devices</p>
-                    <p class="project-desc">Implemented an IntersectionObserver-based scrollspy navigation bar that dynamically highlights the active section as the user scrolls</p>
-                    <p class="project-desc">Integrated an EmailJS-powered contact form with client-side validation for direct messaging without a backend server</p>
-                    <div class="project-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Javscript</span>
-                    </div>
-                    <div class="project-btns">
-                        <a href="https://github.com/Thang-H-Pham/thangpham" target="_blank" class="btn-github">
-                            <i class="fa-brands fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>  
-
-        </div>
-    </section>
-
-    <!-- Experiences Section -->
-    <section class="experiences" id="experiences">
-        <div class="exp-header">
-            <h2>My <span class="gold">Experiences</span></h2>
-            <div class="underline"></div>
-        </div>
-        <div class="exp-grid">
-
-            <!-- HackWIT -->
-            <div class="exp-card">
-                <div class="exp-top">
-                    <h3>Web Developer</h3>
-                    <span class="exp-badge">Nov 2025 – Present</span>
-                </div>
-                <p class="exp-company"><i class="fa-solid fa-building"></i> HackBoston</p>
-                <p class="exp-location"><i class="fa-solid fa-location-dot"></i> Boston, MA · Hybrid</p>
-                <p class="exp-desc">Developing and maintaining the contact page of the HackBoston website as part of the tech team.</p>
-                <ul class="exp-list">
-                    <li>Design the layout for the HackBoston team page using Svelte and Tailwind CSS, structuring team organizers' profiles (names and roles) for clear presentation.</li>
-                    <li>Collected UI feedback from teammates and iterated on color scheme, image sizing, and typography to improve visual consistency.</li>
-                    <li>Maintain and extend the broader HackBoston website by refactoring Svelte components for modularity and responsive rendering.</li>
-                </ul>
-                <div class="exp-tags">
-                    <span>Svelte</span>
-                    <span>TypeScript</span>
-                    <span>Tailwind CSS</span>
-                </div>
-            </div>
-
-            <!-- CodeWIT -->
-            <div class="exp-card">
-                <div class="exp-top">
-                    <h3>Code-A-Thon Competitor</h3>
-                    <span class="exp-badge">Jan 2026</span>
-                </div>
-                <p class="exp-company"><i class="fa-solid fa-building"></i> CodeWIT</p>
-                <p class="exp-location"><i class="fa-solid fa-location-dot"></i> Boston, MA · On-site</p>
-                <p class="exp-desc">Participated in CodeWIT, Wentworth's annual coding competition.</p>
-                <ul class="exp-list">
-                    <li>Solved 22 of 50 mixed-difficulty problems in a full-day, self-paced HackerRank challenge limited to registered students from all years class</li>
-                    <li>Designed, validated, and debugged Java solutions using arrays, ArrayLists, and exception handling, earning partial and full credit across a range of problem difficulties.</li>
-                </ul>
-                <div class="exp-tags">
-                    <span>Java</span>
-                    <span>Problem Solving</span>
-                    <span>Data Structures</span>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-        <div class="contact-header">
-            <h2>Let's <span class="gold">Get In Touch</span></h2>
-            <p>Let's build something together!</p>
-            <div class="underline"></div>
-        </div>
-        <div class="contact-content">
-            <div class="contact-left">
-                <h3>Let's create something amazing together</h3>
-                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div>
-                            <span class="label">Email</span>
-                            <p>thanghpham1506@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fa-solid fa-phone"></i>
-                        <div>
-                            <span class="label">Phone</span>
-                            <p>+1 (857) 233-3620</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div>
-                            <span class="label">Location</span>
-                            <p>Boston, MA</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="contact-right">
-                <div class="form-group">
-                    <label>Name</label>
-                    <input type="text" id="name" placeholder="Your name">
-                    <span class="error" id="name-error">Name is required.</span>
-                </div>
-                <div class="form-group">
-                    <label>Email</label>
-                    <input type="email" id="email" placeholder="your.email@example.com">
-                    <span class="error" id="email-error">Please enter a valid email.</span>
-                </div>
-                <div class="form-group">
-                    <label>Subject</label>
-                    <input type="text" id="subject" placeholder="What's this about?">
-                    <span class="error" id="subject-error">Subject is required.</span>
-                </div>
-                <div class="form-group">
-                    <label>Message</label>
-                    <textarea id="message" placeholder="Tell me about your project..."></textarea>
-                    <span class="error" id="message-error">Message is required.</span>
-                </div>
-                <button class="btn-send" id="sendBtn">
-                    <i class="fa-solid fa-paper-plane"></i> Send Message
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
     <footer>
         <p>Copyright © <span id="year"></span> Thang Pham. All Rights Reserved.</p>
     </footer>
 
-    <!-- JS -->
     <script src="./js/year.js"></script>
     <script src="./js/nav.js"></script>
-    <script src="./js/navbar.js"></script>
-    <script src="./js/contact.js"></script>
 
 </body>
 </html>

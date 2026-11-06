@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Thang Pham</title>
+    <meta name="description" content="About Thang Pham: background, technical skills and certifications.">
+
+    <!-- Lets the CSS collapse the nav into a hamburger only when JS is running -->
+    <script>document.documentElement.classList.add('js');</script>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/b588c504a9.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts: Lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/general.css">
+    <link rel="stylesheet" href="./style/about.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="navbar-inner container">
+            <a class="brand" href="index.html">Thang Pham</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links" id="site-nav" aria-label="Main">
+                <a href="index.html">HOME</a>
+                <a href="about.html" aria-current="page">ABOUT</a>
+                <a href="work.html">WORK</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>About <span class="gold">Me</span></h1>
+            <div class="underline"></div>
+            <p>A bit about who I am, what I work with, and what I've earned along the way.</p>
+        </div>
+
+        <!-- BIO -->
+        <section class="bio">
+            <div class="bio-photo">
+                <img class="glow" src="./img/About_Me.jpg" alt="Photo of Thang Pham">
+            </div>
+            <div class="bio-text">
+                <p class="name">Full name: Thang Huu Pham</p>
+                <p class="role">Computer Science Sophomore Undergraduate – From Vietnam</p>
+                <div class="bio-divider"></div>
+                <p>
+                    I'm a sophomore student at Wentworth Institute of Technology (Class of 2029) majoring in Computer Science, with a current GPA of 3.95, interested in how AI is reshaping the way we live, work, and connect.
+                </p>
+                <p>
+                    I currently work as a Web Developer on the <span class="highlight">HackWIT</span> team, building real-world web experiences using <span class="highlight">Svelte, TypeScript, and Tailwind CSS</span> — modern tools that are similar to my foundation in <span class="highlight">HTML and CSS</span>.
+                </p>
+                <p>
+                    Outside of academics, I enjoy playing guitar, soccer, and tennis.
+                </p>
+                <div class="btn-row">
+                    <a href="./My%20Resume.pdf" target="_blank" class="btn">
+                        View My Resume <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/thanghpham/" target="_blank" class="btn">
+                        View My LinkedIn <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECHNICAL SKILLS -->
+        <section class="section">
+            <div class="section-header">
+                <h2>My <span class="gold">Technical Skills</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-grid">
+
+                <div class="skill-box">
+                    <h3>Programming <span class="gold">Languages</span></h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fa-brands fa-java"></i>
+                            <p>Java</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-js"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./img/skills/typescript.png" alt="">
+                            <p>TypeScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./img/skills/python.png" alt="">
+                            <p>Python</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <h3>Web &amp; <span class="gold">Frameworks</span></h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fa-brands fa-html5"></i>
+                            <p>HTML</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <p>CSS</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./img/skills/tailwind.png" alt="">
+                            <p>Tailwind CSS</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./img/skills/svelte.png" alt="">
+                            <p>Svelte</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./img/skills/vite.png" alt="">
+                            <p>Vite</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <h3>Core Skills &amp; <span class="gold">Tools</span></h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <img src="./img/skills/dsa.png" alt="">
+                            <p>Data Structures &amp; Algorithms</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-github"></i>
+                            <p>GitHub</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./img/skills/responsive-UI.png" alt="">
+                            <p>Responsive UI</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section class="section">
+            <div class="section-header">
+                <h2>My <span class="gold">Certifications</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <a href="https://www.freecodecamp.org/certification/thangphamhuu15/responsive-web-design-v9" target="_blank">
+                        <img src="./img/Certifications/Reponsive_Web_Design.png" alt="Responsive Web Design certificate">
+                    </a>
+                    <p>Responsive Web Design</p>
+                </div>
+                <div class="cert-card">
+                    <a href="https://www.freecodecamp.org/certification/thangphamhuu15/python-v9" target="_blank">
+                        <img src="./img/Certifications/Python_certification.png" alt="Python certificate">
+                    </a>
+                    <p>Python</p>
+                </div>
+                <div class="cert-card">
+                    <a href="https://verify.skilljar.com/c/6o75er7e2y9s" target="_blank">
+                        <img src="./img/Certifications/AI_Fluency_Framework_and_Foundations.png" alt="AI Fluency: Framework &amp; Foundations certificate">
+                    </a>
+                    <p>AI Fluency: Framework &amp; Foundations</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © <span id="year"></span> Thang Pham. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./js/year.js"></script>
+    <script src="./js/nav.js"></script>
+
+</body>
+</html>
